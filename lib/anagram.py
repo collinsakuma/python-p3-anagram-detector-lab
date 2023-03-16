@@ -9,12 +9,16 @@ class Anagram:
         for word in word_list:
             if sorted([letter for letter in word]) == sorted([letter for letter in self.word]):
                 anagram_list.append(word)
-            else:
-                None
         if len(anagram_list) == 0:
             return []
-        else:
+        else: 
             return anagram_list
+
+        #         None
+        # if len(anagram_list) == 0:
+        #     return []
+        # else:
+        #     return anagram_list
 
 
 Anagram("enlist").match(["listen", "silent", "hippopotamus"])
